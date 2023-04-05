@@ -1,0 +1,25 @@
+<!-- <form [formGroup]="newBookmark" (ngSubmit)="this.createBookmark($event)">
+  <app-custom-input
+    label="Enter a name for this bookmark"
+    [formGroup]="newBookmark"
+    [id]="name"
+  ></app-custom-input>
+  <app-custom-input
+    label="Enter the URL for this bookmark"
+    [id]="url"
+  ></app-custom-input>
+  <app-color-picker id="color" [parentForm]="newBookmark"></app-color-picker>
+  <app-generate-bookmark-btn></app-generate-bookmark-btn>
+</form> -->
+<form [formGroup]="newBookmark" (ngSubmit)="createBookmark()">
+  <app-custom-input
+    id="bookmarkName"
+    label="Enter a name for this bookmark"
+  ></app-custom-input>
+  <app-custom-input
+    id="bookmarkUrl"
+    label="Enter the URL for this bookmark"
+  ></app-custom-input>
+  <app-color-picker id="bookmarkColor"></app-color-picker>
+  <app-generate-bookmark-btn></app-generate-bookmark-btn>
+</form>

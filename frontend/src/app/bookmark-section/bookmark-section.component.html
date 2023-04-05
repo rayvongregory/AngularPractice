@@ -1,0 +1,9 @@
+<div id="bookmark-section" class="empty">
+  <app-bookmark
+    bookmarkId="{{ bookmark.value?.bookmarkId }}"
+    bookmarkName="{{ bookmark.value?.bookmarkName }}"
+    bookmarkUrl="{{ bookmark.value?.bookmarkUrl }}"
+    bookmarkColor="{{ bookmark.value?.bookmarkColor }}"
+    *ngFor="let bookmark of bookmarks | keyvalue"
+  ></app-bookmark>
+</div>

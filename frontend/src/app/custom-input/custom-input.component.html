@@ -1,0 +1,9 @@
+<div>
+  <label>{{ label }}</label>
+  <input
+    type="text"
+    (focus)="handleFloat($event)"
+    (blur)="handleFloat($event)"
+    [formControlName]="id"
+  />
+</div>

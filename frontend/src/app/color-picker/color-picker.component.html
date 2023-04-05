@@ -1,0 +1,17 @@
+<p>Select a color for this bookmark</p>
+<div class="colors">
+  <label
+    for="{{ item.key }}"
+    title="{{ item.key }}"
+    *ngFor="let item of colors | keyvalue"
+  >
+    <input
+      id="{{ item.key }}"
+      type="radio"
+      name="bookmarkColor"
+      value="{{ item.value }}"
+      [formControlName]="id"
+    />
+    <div [ngStyle]="{ backgroundColor: item.value }"></div>
+  </label>
+</div>
